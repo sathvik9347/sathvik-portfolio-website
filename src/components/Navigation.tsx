@@ -41,7 +41,7 @@ export const Navigation = () => {
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="font-bold text-xl">
-            <span className="bg-hero-gradient bg-clip-text text-transparent">Sathvik</span>
+            <span className="bg-hero-gradient bg-clip-text text-transparent">Sathvik Reddy Kakulavaram</span>
           </div>
           
           {/* Desktop Navigation */}

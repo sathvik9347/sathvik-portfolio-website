@@ -29,16 +29,22 @@ export const Hero = () => {
               </span>
             </div>
             <div className="flex flex-wrap justify-center gap-2 text-sm md:text-lg text-muted-foreground">
-              <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">Java</span>
-              <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">Spring Boot</span>
-              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full border border-accent/20">React</span>
-              <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">AWS</span>
+              <div className="flex flex-wrap justify-center gap-2 text-sm md:text-lg text-muted-foreground">
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">Java</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">Spring Boot</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">Node.js</span>
+                <span className="px-3 py-1 bg-accent/10 text-accent rounded-full border border-accent/20">REST APIs</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">SQL</span>
+                <span className="px-3 py-1 bg-accent/10 text-accent rounded-full border border-accent/20">React</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/20">AWS</span>
+              </div>
+
             </div>
           </div>
           
           {/* Enhanced description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building end-to-end web applications with secure APIs, modern frontends, and cloud infrastructure.
+          Crafting full-stack web applications with responsive frontends, robust backends, and cloud-native infrastructure.
           </p>
           
           {/* Location with icon */}
@@ -52,11 +58,13 @@ export const Hero = () => {
             <Button 
               size="lg" 
               className="group relative overflow-hidden bg-hero-gradient hover:bg-hero-gradient-dark shadow-glow hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg px-8 py-4 border border-primary/20"
-            >
+              onClick={() => window.open('/Sathvik-SoftwareEngineer-Portfolio.pdf', '_blank')}
+>
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               <FileText className="mr-3 h-6 w-6 relative z-10" />
               <span className="relative z-10">View Resume</span>
             </Button>
+
             <Button 
               variant="outline" 
               size="lg" 

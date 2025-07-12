@@ -16,11 +16,16 @@ const experiences: ExperienceItem[] = [
     company: "Intel",
     role: "Full Stack Developer",
     period: "2025 – Present",
-    location: "Tampa,USA",
+    location: "Tampa, USA",
     description: [
-      "Built full stack applications with high-performance REST APIs handling 100K+ transactions daily using AWS RDS, Java, and Spring Boot",
-      "Developed responsive React.js frontends with modern UI/UX design and seamless backend integration",
-      "Implemented scalable microservices architecture for enterprise-level applications"
+      "Engineered full-stack financial systems using Spring Boot (Java) and React.js, improving system scalability.",
+      "Developed and deployed 15+ secure RESTful APIs handling 100K+ financial transactions daily using AWS RDS.",
+      "Reduced API security vulnerabilities by 20% through JWT-based authentication and OWASP-compliant practices.",
+      "Built backend logic with Java and Express.js, ensuring encrypted data exchange via JWT and OAuth 2.0.",
+      "Accelerated feature delivery by 25% by collaborating with product/UX teams in Agile sprints.",
+      "Delivered responsive UI components aligned with user workflows, enhancing user experience and task efficiency.",
+      "Deployed serverless infrastructure using AWS Batch, SNS, and RDS to support high-throughput transaction data."
+
     ],
     technologies: ["Java", "Spring Boot", "React.js", "AWS RDS", "REST APIs", "Microservices"]
   },
@@ -30,9 +35,13 @@ const experiences: ExperienceItem[] = [
     period: "2021 – 2023",
     location: "Chennai, India",
     description: [
-      "Developed comprehensive insurance platform features using Guidewire, Gosu, and Java",
-      "Improved test coverage from 60% to 85% through implementation of comprehensive unit and integration tests",
-      "Reduced system downtime by 30% through proactive monitoring and performance optimization"
+      "Built Guidewire CC modules using Gosu, Java, and XML, integrating LexisNexis, CCC, and third-party services.",
+      "Improved test coverage by 35% and reduced post-release issues by 20% through comprehensive GUnit test suites.",
+      "Optimized workflows and business rules, cutting claims cycle time and increasing process efficiency.",
+      "Resolved high-priority production issues via deep log analysis and tuning, cutting downtime by 30%.",
+      "Led peer code reviews and enforced standards, lowering defect rates by 20% and enhancing maintainability.",
+      "Implemented secure API integrations with external systems, improving data reliability and reducing response time.",
+      "Streamlined batch jobs and policy integrations, reducing manual effort and boosting system throughput."
     ],
     technologies: ["Java", "Guidewire", "Gosu", "JUnit", "Integration Testing"]
   },
@@ -42,9 +51,11 @@ const experiences: ExperienceItem[] = [
     period: "2020 – 2021",
     location: "Hyderabad, India",
     description: [
-      "Designed and implemented backend billing APIs for enterprise customer management system",
-      "Enhanced user interface components using Tailwind CSS and modern React patterns",
-      "Focused on Test-Driven Development (TDD) and comprehensive integration testing strategies"
+      "Achieved 40% test coverage for critical modules using JUnit and rigorous TDD methodologies.",
+      "Architected and deployed RESTful APIs for CRUD operations and billing system integrations.",
+      "Reduced third-party API failures by 20% via robust error handling and retry mechanisms.",
+      "Boosted user engagement by 30% by redesigning responsive UIs using Tailwind CSS and Bootstrap.",
+      "Conducted functional and integration testing using JUnit and Postman, ensuring robust service validation."
     ],
     technologies: ["Java", "React.js", "Tailwind CSS", "TDD", "REST APIs"]
   }
@@ -60,7 +71,7 @@ export const Experience = () => {
             Building scalable systems across leading technology companies
           </p>
         </div>
-        
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card key={index} className="shadow-medium hover:shadow-large transition-all duration-300 bg-card-gradient">
@@ -82,17 +93,12 @@ export const Experience = () => {
                   </div>
                 </div>
               </CardHeader>
-              
+
               <CardContent>
-                <ul className="space-y-2 mb-6">
-                  {exp.description.map((desc, descIndex) => (
-                    <li key={descIndex} className="flex items-start gap-2">
-                      <span className="h-1.5 w-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span className="text-muted-foreground">{desc}</span>
-                    </li>
-                  ))}
-                </ul>
-                
+                <p className="text-muted-foreground mb-6 text-justify">
+                  {exp.description.join(" ")}
+                </p>
+
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="secondary" className="text-xs">
