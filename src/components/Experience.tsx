@@ -16,7 +16,7 @@ const experiences: ExperienceItem[] = [
     company: "Intel",
     role: "Full Stack Developer",
     period: "2025 – Present",
-    location: "Remote",
+    location: "Tampa,USA",
     description: [
       "Built full stack applications with high-performance REST APIs handling 100K+ transactions daily using AWS RDS, Java, and Spring Boot",
       "Developed responsive React.js frontends with modern UI/UX design and seamless backend integration",
@@ -40,7 +40,7 @@ const experiences: ExperienceItem[] = [
     company: "Dell Technologies",
     role: "Software Developer",
     period: "2020 – 2021",
-    location: "Bangalore, India",
+    location: "Hyderabad, India",
     description: [
       "Designed and implemented backend billing APIs for enterprise customer management system",
       "Enhanced user interface components using Tailwind CSS and modern React patterns",

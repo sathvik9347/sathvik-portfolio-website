@@ -37,6 +37,7 @@ export const Footer = () => {
               <Button 
                 variant="outline" 
                 size="icon"
+                onClick={() => window.open('https://www.linkedin.com/in/kakulavaram-sathvik-reddy', '_blank')}
                 className="shadow-soft hover:shadow-medium transition-all duration-300"
               >
                 <Linkedin className="h-5 w-5" />
@@ -52,7 +53,7 @@ export const Footer = () => {
             
             <div className="text-center text-muted-foreground">
               <p>© 2025 Sathvik Reddy Kakulavaram. All rights reserved.</p>
-              <p className="text-sm mt-1">Built with React, TypeScript, and Tailwind CSS</p>
+              <p className="text-sm mt-1"></p>
             </div>
           </div>
         </div>
